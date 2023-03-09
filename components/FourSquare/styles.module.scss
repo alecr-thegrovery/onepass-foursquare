@@ -1,0 +1,49 @@
+/*========================================*/
+//	FourSquare
+//	
+//	Clone this component out to make 
+//	new components.
+//	
+/*========================================*/
+
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+/* =========================== */
+/* ===== Component Styles ===== */
+/* =========================== */
+.FourSquare{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border: solid 2px $black;
+}
+
+.Cell{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	aspect-ratio: 1/1;
+	border: solid 2px $black;
+	&[data-cell="active"]{
+		background-color: $orange;
+	}
+	.cellInner{
+		width: clamp(200px, 75%, 350px);
+		margin: auto;
+	}
+	.logo{
+		
+	}
+
+	.playerName{
+		text-align: center;
+	}
+}
