@@ -12,8 +12,7 @@ import componentStyles from './styles.module.scss'
 
 export default function ResetButton({ 
   //Props
-  children, id, image, title, 
-  previewText, author, date
+  children, id, buttonText
 }) {
 
   //JS Goes Here
@@ -27,8 +26,9 @@ export default function ResetButton({
   return (
     <div className={componentStyles.ResetButton}>
       <button onClick={handleClick}>
-            Clear Local Storage
-          </button>
+        
+      {buttonText ? buttonText : "Clear Local Storage"}
+      </button>
     </div>
   )
 }

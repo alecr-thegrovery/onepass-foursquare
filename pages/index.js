@@ -36,15 +36,9 @@ export default function Home({ allPostsData }) {
 
       <Container>
         <LeaderBoard/>
-        <ResetButton/>
+        <ResetButton buttonText="Reset High Scores"/>
       </Container>
 
-      <br/>
-      <hr/>
-      <br/>
-
-      
-      
     </Layout>
   )
 }

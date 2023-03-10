@@ -1,5 +1,6 @@
 @import "@styles/vars.module.scss";
 
+
 html,
 body {
   padding: 0;
@@ -8,7 +9,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   //main font
-  font-family: $fontBody, monospace;
+  //font-family: $fontBody, monospace;
+  font-family: 'Press Start 2P', cursive;
   line-height: 1.6;
   font-size: $clampMedium;
   color: $textColor;

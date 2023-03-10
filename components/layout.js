@@ -44,37 +44,18 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
       </Head>
-
-      <DesktopNav/>
-      <NavMenu/>
-      
 
       {/* MAIN SECTION */}
       <main className={styles.main}>
-        
-          {/* BREADCRUMBS */}
-          {/*{!home && (
-            <Container>
-              <div className={styles.backToHome}>
-                <Link href="/">
-                  <a>← Back to home</a>
-                </Link>
-              </div>
-            </Container>
-          )}*/}
           
           <div>
             {children}
           </div>
-          
-        
-      </main>
 
-      <Footer/>
-      
+      </main>
 
     </div>
   )
