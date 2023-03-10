@@ -8,6 +8,7 @@ import BlogPreview from '@components/BlogPreview'
 import Container from '@components/Container'
 import FourSquare from '@components/FourSquare'
 import LeaderBoard from '@components/LeaderBoard'
+import ResetButton from '@components/ResetButton'
 
 /*===== Styles =====*/
 import utilStyles from '@styles/utils.module.css'
@@ -35,6 +36,7 @@ export default function Home({ allPostsData }) {
 
       <Container>
         <LeaderBoard/>
+        <ResetButton/>
       </Container>
 
       <br/>
